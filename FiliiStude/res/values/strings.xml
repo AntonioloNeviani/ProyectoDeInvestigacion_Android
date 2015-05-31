@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FiliiStude</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_contar_manzanas">Contar Manzanas</string>
+    <string name="title_activity_indice">Indice</string>
+    <string name="title_activity_nuevo_usuario">Nuevo Usuario</string>
+    <string name="title_activity_contar_ascendente">Ascendente</string>
+    <string name="title_activity_contar_descendente">Descendente</string>
+    <string name="title_activity_objetos">Figuras</string>
+    <string name="title_activity_circulos">Círculos </string>
+    <string name="title_activity_editar_usuario">EditarUsuario</string>
+
+</resources>

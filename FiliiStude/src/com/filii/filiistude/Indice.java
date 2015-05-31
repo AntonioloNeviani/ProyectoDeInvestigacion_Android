@@ -1,0 +1,118 @@
+/*
+*
+* Código realizado por Jorge Antonio y María de Lourdes
+*
+*/
+
+package com.filii.filiistude;
+
+import android.support.v7.app.ActionBarActivity;
+import android.content.Context;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+public class Indice extends ActionBarActivity {
+	private ImageButton contarManzana, contemosAscendente, contemosDescendente, objetos, circulos;
+	private TextView textHola;
+	SQLiteDatabase db;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_indice);
+
+		db = openOrCreateDatabase("StudentDB", Context.MODE_PRIVATE, null);
+
+		textHola = (TextView) findViewById(R.id.textHola);
+		textHola.setText("Bienvenido "+getIntent().getStringExtra("idNombre"));
+
+		contarManzana = (ImageButton) findViewById(R.id.ContraManzanas);
+		contarManzana.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ingresar(v);
+			}
+		});
+		contemosAscendente = (ImageButton) findViewById(R.id.ContemosAscendente);
+		contemosAscendente.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ingresar2(v);
+			}
+		});
+		contemosDescendente = (ImageButton) findViewById(R.id.ContemosDescendente);
+		contemosDescendente.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ingresar3(v);
+			}
+		});
+		objetos = (ImageButton) findViewById(R.id.Objetos);
+		objetos.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ingresar4(v);
+			}
+		});
+		circulos = (ImageButton) findViewById(R.id.Circulos);
+		circulos.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ingresar5(v);
+			}
+		});
+	}
+
+    public void ingresar(View v){
+    	Intent intent = new Intent(this, ContarManzanas.class );
+		startActivity(intent);
+    }
+    public void ingresar2(View v){
+    	Intent intent = new Intent(this, ContarAscendente.class );
+		startActivity(intent);
+    }
+    public void ingresar3(View v){
+    	Intent intent = new Intent(this, ContarDescendente.class );
+		startActivity(intent);
+    }
+    public void ingresar4(View v){
+    	Intent intent = new Intent(this, Objetos.class );
+		startActivity(intent);
+    }
+    public void ingresar5(View v){
+    	Intent intent = new Intent(this, Circulos.class );
+		startActivity(intent);
+    }
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.indice, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondo2"
+    tools:context="com.filii.filiistude.Objetos" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="506dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:text="¿Cuantos objetos hay?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView_imagen"
+                    android:layout_width="142dp"
+                    android:layout_height="166dp"
+                    android:layout_weight="0.65"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.65"
+                    android:src="@drawable/igual" />
+
+                <ImageView
+                    android:id="@+id/numero"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.65"
+                    android:src="@drawable/interrogacio" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:gravity="center" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="39.39"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/button1"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="1"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="2"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="3"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="39.39"
+                        android:gravity="center" >
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="4"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="5"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="6"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="39.39" >
+
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="7"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="8"
+                            android:textColor="#FFFFFF" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="9"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="39.39" >
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="61dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="prueba"
+                            android:text="10"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/juego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:onClick="prueba"
+                android:text="Calificar"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

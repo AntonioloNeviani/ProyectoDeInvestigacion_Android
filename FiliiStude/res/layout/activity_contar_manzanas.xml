@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_conmanz"
+    android:orientation="horizontal"
+    tools:context="com.filii.filiistude.ContarManzanas" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="506dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:text="Contemos manzanas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView_imagen"
+                    android:layout_width="188dp"
+                    android:layout_height="198dp"
+                    android:layout_weight="1.02"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="DescripciÃ³n del contenido de la imagen"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <ImageView
+                    android:id="@+id/numero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="199dp"
+                    android:layout_weight="0.32"
+                    android:src="@drawable/interrogacio" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_superior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="17.52"
+                android:gravity="center"
+                android:text="Manzanas"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView_inferior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="60.18"
+                android:gravity="center"
+                android:text="Anterior                              Siguiente"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ImageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_weight="39.39"
+                    android:onClick="anterior"
+                    android:src="@android:drawable/ic_media_previous" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_weight="39.39"
+                    android:onClick="siguiente"
+                    android:src="@android:drawable/ic_media_next" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="1"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="2"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="3"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="4"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="5"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="6"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="7"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="8"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="9"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="prueba"
+                    android:text="10"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/juego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="39.39"
+                android:onClick="prueba"
+                android:text="Comenzar  el juego"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.filii.filiistude"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ContarManzanas"
+            android:label="@string/title_activity_contar_manzanas" >
+        </activity>
+        <activity
+            android:name=".Indice"
+            android:label="@string/title_activity_indice" >
+        </activity>
+        <activity
+            android:name=".NuevoUsuario"
+            android:label="@string/title_activity_nuevo_usuario" >
+        </activity>
+        <activity
+            android:name=".ContarAscendente"
+            android:label="@string/title_activity_contar_ascendente" >
+        </activity>
+        <activity
+            android:name=".ContarDescendente"
+            android:label="@string/title_activity_contar_descendente" >
+        </activity>
+        <activity
+            android:name=".Objetos"
+            android:label="@string/title_activity_objetos" >
+        </activity>
+        <activity
+            android:name=".Circulos"
+            android:label="@string/title_activity_circulos" >
+        </activity>
+        <activity
+            android:name=".EditarUsuario"
+            android:label="@string/title_activity_editar_usuario" >
+        </activity>
+    </application>
+
+</manifest>
